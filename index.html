@@ -10,12 +10,7 @@
 <body>
 
     <h1>Git - titre de la page</h1>
-    <nav>
-        <ul>
-            <li>ajout a branche Menu Accueil </li>
-            <li>git commit -a -m "ajout menu dans fichier index.html"</li>
-        </ul>
-    </nav>
+
     <ul>
         <li>paragraphe 1-1</li>
         <li>paragraphe 2</li>
@@ -23,15 +18,19 @@
     </ul>
 
     <h2>POur faire staging et commit : git commit -a -m "ajout h2 dans infex.html"</h2>
-
-    <p>par default on est positionner sur la branche master</p>
-    <p>PS C:\wamp64\www\applications\julie\coursGit> git checkout MenuAccueil
-        Switched to branch 'MenuAccueil'
+    <p>pour fusionner +sieurs branche revenir sur branche master puis fusionner les branches avec merge</p>
+    <p>PS C:\wamp64\www\applications\julie\coursGit> git checkout master
+        Switched to branch 'master'
         PS C:\wamp64\www\applications\julie\coursGit> git branch
-        * MenuAccueil
-        master
-        PS C:\wamp64\www\applications\julie\coursGit>
-    </p>
+        MenuAccueil
+        * master
+
+        PS C:\wamp64\www\applications\julie\coursGit> git merge MenuAccueil
+        Updating 4a8ed85..734ea34
+        Fast-forward
+        index.html | 16 +++++++++++++++-
+        1 file changed, 15 insertions(+), 1 deletion(-)
+        PS C:\wamp64\www\applications\julie\coursGit> </p>
 
 </body>
 
